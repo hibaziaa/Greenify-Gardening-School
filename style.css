@@ -403,6 +403,16 @@ nav {
   line-height: 1.1;
 }
 
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Starting position */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* End position */
+  }
+}
 /* box styling */
 .boxesContainer {
   display: flex;
@@ -442,11 +452,11 @@ nav {
   height: 400px;
   object-fit: cover;
   margin: 20px 0;
-  transition: transform 0.3s ease;
+  transition: transform 0.7s ease;
 }
 
 .boxImg:hover {
-  transform: scale(1.03);
+  transform: scale(0.9);
 }
 
 .box1 h1,
@@ -462,15 +472,40 @@ nav {
   font-size: 18px;
   padding: 12px 30px;
 }
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px); /* Starting position */
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0); /* End position */
-  }
+
+.toggleButton{
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin: 2% 30%;
+  border-radius: 5px;
+}
+.box1 .toggleButton ,
+.box3 .toggleButton{
+  background-color: #ffddd1; /* Matches the box2 background */
+  color: #5b6555; /* Matches the text color */
+}
+
+.box2 .toggleButton {
+  background-color:  #5b6555; /* Matches the box2 background */
+  color: #ffddd1; /* Matches the text color */
+}
+.toggleButton:hover {
+  background-color: #e0c9be;
+  color: #5b6555;
+}
+.boxContent {
+  opacity: 1;
+  /* max-height: 500px; */
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.hiddenContent {
+  opacity: 0;
+  max-height: 0;
 }
 
 /* CONTACT US PAGE STYLING */
