@@ -56,7 +56,6 @@ nav {
 .navItems a:hover {
   color: #ffddd1;
 }
-
 /* Media Queries for responsiveness */
 
 /* Tablet view */
@@ -486,13 +485,13 @@ nav {
 }
 .box1 .toggleButton ,
 .box3 .toggleButton{
-  background-color: #ffddd1; /* Matches the box2 background */
-  color: #5b6555; /* Matches the text color */
+  background-color: #ffddd1; 
+  color: #5b6555; 
 }
 
 .box2 .toggleButton {
-  background-color:  #5b6555; /* Matches the box2 background */
-  color: #ffddd1; /* Matches the text color */
+  background-color:  #5b6555; 
+  color: #ffddd1; 
 }
 .toggleButton:hover {
   background-color: #e0c9be;
@@ -500,7 +499,6 @@ nav {
 }
 .boxContent {
   opacity: 1;
-  /* max-height: 500px; */
   overflow: hidden;
   transition: max-height 0.5s ease, opacity 0.5s ease;
 }
@@ -530,10 +528,10 @@ input[type="number"],
 textarea {
   padding: 10px;
   font-size: 16px;
-  border: 2px solid #8a9a5b; /* Slightly darker border */
+  border: 2px solid #8a9a5b; 
   border-radius: 5px;
   outline: none;
-  background-color: #e1e8d8; /* Light sage */
+  background-color: #e1e8d8; 
   width: calc(25% - 10px); 
 }
 
@@ -552,22 +550,22 @@ textarea {
 .formSection button {
   padding: 12px 60px;
   margin: auto;
-  background-color: #5a7350; /* Deep olive */
+  background-color: #5a7350; 
   border-radius: 5px;
   border: none;
-  color: #f5f0f0; /* Matches form background */
+  color: #f5f0f0; 
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 .formSection button:hover {
-  background-color: #7a9a65; /* Slightly lighter olive */
+  background-color: #7a9a65;
   color: #ffffff;
 }
 
 hr {
-  border: 1px solid #5b6555; /* Set the color to match the theme */
+  border: 1px solid #5b6555; 
   margin: 20px 0;
   width: 90%;
 }
@@ -603,9 +601,7 @@ hr {
 }
 /* tablets */
 @media (max-width: 768px) {
-  .welcomeContent {
-    padding: 10px;
-  }
+ 
   .welcomeContent h1 {
     font-size: 40px;
   }
@@ -685,6 +681,10 @@ hr {
 }
 /* mobile phones */
 @media (min-width: 320px) and (max-width: 425px) {
+  .welcomeContent {
+    padding: 10px;
+  }
+  
   .container {
     flex-direction: column;
     width: 100%;
