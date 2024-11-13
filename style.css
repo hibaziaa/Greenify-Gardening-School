@@ -159,12 +159,12 @@ nav {
   color: #5b6555;
   background-color: #ffddd1;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
   margin-top: 30px;
 }
 .welcomeContent button:hover{
-   background-color: #fcafa4;
-   color:#8a9a80 ;
+   background-color:white;
 }
 .welcomeContent a {
   text-decoration: none;
@@ -257,6 +257,7 @@ nav {
 .differentColorBox button {
   padding: 12px 24px;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
   margin: 10px;
   align-self: start;
@@ -360,6 +361,7 @@ nav {
 .sponsorContainer button {
   padding: 15px 40px;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
   background-color: #ffddd1;
   margin-top: 60px;
@@ -529,7 +531,7 @@ textarea {
   padding: 10px;
   font-size: 16px;
   border: 2px solid #8a9a5b; /* Slightly darker border */
-  border-radius: 3px;
+  border-radius: 5px;
   outline: none;
   background-color: #e1e8d8; /* Light sage */
   width: calc(25% - 10px); 
@@ -551,7 +553,8 @@ textarea {
   padding: 12px 60px;
   margin: auto;
   background-color: #5a7350; /* Deep olive */
-  border-radius: 3px;
+  border-radius: 5px;
+  border: none;
   color: #f5f0f0; /* Matches form background */
   font-size: 16px;
   cursor: pointer;
